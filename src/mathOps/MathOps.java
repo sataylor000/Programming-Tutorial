@@ -31,8 +31,17 @@ public class MathOps {
 		
 		// Now that we have a and b, let's do all the calculations based on them.
 		// To Do:  create variables add, sub, mul, div, and rem.  Use +, -, *, /, and % operators to calculate these values for the given a and b.
-		
-		
+		int add = a + b;
+		int sub = a - b;
+		int mul = a * b;
+		int div = a / b;
+		int rem = a % b;
+
+		System.out.println(a + " + " + b + " = " + add);
+		System.out.println(a + " - " + b + " = " + sub);
+		System.out.println(a + " * " + b + " = " + mul);
+		System.out.println(a + " / " + b + " = " + div + " rem " + rem);
+
 		// To Do:  Print the inputs and the results.  The output should look something like this for a=29 and b=4:
 		//         29 + 4 = 33
 		//         29 - 4 = 25
@@ -49,6 +58,12 @@ public class MathOps {
 		// Bonus: Try adding parentheses to your code as shown on the previous line and see the results of check_a change for the two options!
 		//        (you could do this by changing the program and re-running, or by copying/modifying the line and printing it multiple times 
 		//        and showing the results of each one all in one program...)
+		int check_a      =  div *  b +  rem;
+		int good_check_a = (div *  b) + rem;
+		int bad_check_a  =  div * (b +  rem);
+		System.out.println("     check_a = " +      check_a);
+		System.out.println("good check_a = " + good_check_a);
+		System.out.println("bad  check_a = " +  bad_check_a);
 
 	
 	}
