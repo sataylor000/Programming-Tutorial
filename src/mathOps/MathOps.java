@@ -65,6 +65,7 @@ public class MathOps {
 		System.out.println("good check_a = " + good_check_a);
 		System.out.println("bad  check_a = " +  bad_check_a);
 
-	
+		scanner.close(); // This tells the program that we're done using the console scanner and it can be turned off.
+
 	}
 }
