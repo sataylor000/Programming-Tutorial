@@ -20,7 +20,7 @@ public class Echo {
 		
 		// To Do:  set the numberOfArgs variable equal to the number of actual args-- remember, this is a variable called args.length
 		// Remember, integers can be set just like strings, so this should look pretty similar to what you've done in previous exercises.
-		
+		numberOfArgs = args.length;
 		
 		// We want to print the entire list of args (whatever they are!), all on one line, *separated by spaces*...
 		// The for() loop is coded for you.  You just need to add the .print() of nextArg where requested.
@@ -35,14 +35,16 @@ public class Echo {
 			// HINT:  Do you need to do anything else besides printing the arg itself to get it to print properly...?
 			//        When a program gets the args from the command line, it ignores the spaces and puts the individual words into the arg list.
 			//        How might you get those spaces back?  What could you do to print a space?
-			
+			System.out.print(nextArg + " ");
 		}
 			
 		// To do:  Since we never move to a new line, print one here at the very end just to clean things up.
 		// You can simply do a println of an empty string "" to do this.  It won't print anything, and then will move to the next line.
 		// or, if you specify nothing at all inside the parentheses, it will assume an empty string.
 		// So, both println("") and println() are equivalent.
-		
+		System.out.println("");
+		System.out.println();
+		System.out.println("foobar");
 
 	}
 
