@@ -32,14 +32,25 @@ public class Quadratic {
 		double b = Double.parseDouble(input);  // get the value for b.
 		
 		//To Do:  Create the user input for getting value c
+		System.out.println("Enter a number for value c:");
+		input = scanner.nextLine();  // We had already defined "input" as a String above.  You can only define it once so here we just use the variable.
+		double c = Double.parseDouble(input);  // get the value for c.
 		
 		// To Do:  Using the functions Math.sqrt(x) and Math.pow(x,y), create the two roots of the solution.
 		//         Call them x1 and x2.  They should be doubles, just like a, b, and c.
 		// Hint:   Be very careful of operator precedence and use of parentheses!!!!!
+		System.out.println("-b = " + (-b));
+		System.out.println("b^2 = " + Math.pow(b, 2));
+		System.out.println("4ac = " + 4*a*c);
+		System.out.println("2a = " + 2*a);
+		System.out.println("b^2 - 4ac =" + (Math.pow(b, 2)-4*a*c));
+		double x1 = ((-b + Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a));
+		double x2 = ((-b - Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a));
 		
 
 		// To Do: Print the two values.  Ideally your output should look like:
 		//        The roots of the equation are -1.0 and -0.5	
+		System.out.println("The roots of the equation are " + x1 + " and " + x2);
 	
 		scanner.close(); // This tells the program that we're done using the console scanner and it can be turned off.
 	}
